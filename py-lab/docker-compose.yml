@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    image: ant1on1su/python3-jupyterlab:latest
+    volumes:
+      - ${PWD}/:/usr/src/app
+    ports:
+      - "8888:8888"
+
