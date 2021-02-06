@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    runtime: nvidia
+    image: ant1on1su/tf-gpu-pylab:latest
+    volumes:
+      - ${PWD}/:/tf
+    ports:
+      - "8888:8888"
